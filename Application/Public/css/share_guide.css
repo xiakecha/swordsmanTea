@@ -1,0 +1,10 @@
+#guide{
+		display:none;
+		position:absolute;
+		right:18px;top:5px;
+		z-index:19999;
+}
+#guide img{
+		width:260px;
+		height:180px;
+}

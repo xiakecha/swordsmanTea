@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+.back {
+	width: 320px;
+}
+
+.userphoto {
+	filter: progid : DXImageTransform.Microsoft.Matrix (   SizingMethod =
+		'auto expand', FilterType = bilinear, Dx = 0.8, Dy = 0, M11 = 0.5, M12
+		= 0.4, M21 = 0.1, M22 = 0.1 );
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(-45deg);
+}

@@ -1,0 +1,29 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+
+    <appender name="kmBugFileAppender" class="LoggerAppenderFile">
+        <param name="file" value="./cachefile/bigdata_log/kmbug.log" />
+    </appender>
+    
+    <appender name="kmClientRequestFileAppender" class="LoggerAppenderFile">
+        <param name="file" value="./cachefile/bigdata_log/kmclientrequest.log" />
+    </appender>
+    
+	<appender name="singleTableOperateAppender" class="LoggerAppenderFile">
+        <param name="file" value="./cachefile/singleTalbe/userOperate.log" />
+    </appender>
+    
+    <logger name="kmBug">
+    	<level value="trace" />
+        <appender_ref ref="kmBugFileAppender" />
+    </logger>
+    
+    <logger name="kmClientRequest">
+    	<level value="trace" />
+        <appender_ref ref="kmClientRequestFileAppender" />
+    </logger>
+   
+   <logger name="singleTableOperateLog">
+    	<level value="trace" />
+        <appender_ref ref="singleTableOperateAppender" />
+    </logger>
+</configuration>

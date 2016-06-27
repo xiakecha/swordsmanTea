@@ -1,0 +1,9 @@
+#cover{
+			display:none;
+			position:absolute;
+			left:0;
+			top:0;
+			z-index:18888;
+			background-color:#000000;
+			opacity:0.7;
+		}

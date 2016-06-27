@@ -1,0 +1,10 @@
+[ 2015-12-11T08:59:35+08:00 ] 127.0.0.1 /activity/index.php/Public/upload/18e1d4233cd7342b21a6e034a276460d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+
+[ 2015-12-11T13:01:05+08:00 ] 127.0.0.1 /activity/index.php/Public/upload/9a1020957c8642359767e2dbfc1b16a7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+

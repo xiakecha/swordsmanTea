@@ -1,0 +1,143 @@
+html,body,div,span,ul,li,p,em,i,b,head,footer,section,article,
+h1,h2,h3,h4,h5,h6,strong,a { padding: 0; margin: 0}
+
+body {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    clear: both; display: block; content: ""; height: 0; overflow: hidden;
+}
+.arrow {
+    width: 50px; position: fixed; bottom: 0; left: 50%; margin-left: -25px; z-index: 10;
+}
+.body-top {
+    width: 100%;
+}
+.body-top .logo img {
+    width: 25%; margin-left: 10px; margin-top: 15px;
+}
+.body-top .title img {
+    width: 100%; margin-top: 15px;
+}
+.body-top .btn {
+    text-align: center; margin-top: 10px; position: relative; z-index: 1;
+}
+.body-top .btn a.free {
+    text-decoration: none; text-align: center; color: white; background: #0eb3fc;
+    display: inline-block; width: 35%; height: 40px; line-height: 40px; border-radius: 10px;
+}
+.body-top .btn a.share {
+    text-decoration: none; text-align: center; color: white; background: #ff870c;
+    display: inline-block;  height: 40px; line-height: 40px; border-radius: 10px;
+    font-size: 14px; padding: 0 30px;
+}
+.body-top .btn p {
+    text-align: center;
+}
+.body-top .btn p span {
+    color: #ff4a19;
+}
+.body-top .people {
+    position: relative;  z-index: 2;
+}
+.body-top .people .left {
+    width: 36%; float: left; margin-top: -8%;
+}
+.body-top .people .right {
+    width: 36%; position: absolute; bottom: 0; right: 0;
+}
+.body-top .box {
+    position: relative; z-index: 3;
+}
+.body-top .box img {
+    width: 100%; margin-top: -12%;
+}
+.body-top .box .text {
+    text-align: center; color: white; position: absolute; width: 100%; bottom: 0; font-size: 14px;
+}
+.body-bottom {
+    background: #fca50c; min-height: 300px; margin-top: -11%; padding-top: 11%;
+}
+.body-bottom .detail {
+    margin: 30px 15px 0; padding: 20px 15px; border: 2px solid #ef9800; min-height: 200px; background: white;
+    border-radius: 10px;
+}
+.body-bottom .detail h1 {
+    font-size: 18px;
+}
+.body-bottom .detail h1 img {
+    width: 55px; position: absolute;
+}
+.body-bottom .detail p {
+    padding: 10px 0 5px 40px; line-height: 1.5; font-size: 16px; position: relative;
+}
+.body-bottom .detail p span {
+    color: #ff4a19;
+}
+.body-bottom .detail p img {
+    width: 30px; position: absolute; left: 0; top: 13px;
+}
+.body-bottom .foot {
+    text-align: right; padding: 0 15px; line-height: 50px; height: 50px; position: relative;
+}
+.body-bottom .foot .gift {
+    width: 100px; position: absolute; left: 0; bottom: 0;
+}
+.body-bottom .foot .official {
+    width: 150px; float: right; height: 50px;
+}
+.body-bottom .foot span {
+    float: right; color: white; font-size: 14px;
+}
+.body-bottom .foot .official img {
+    width: 100%;
+}
+.body-bottom .copyright {
+    text-align: center; color: #ae5905; padding: 20px;
+}
+/*加载*/
+.load{background-color:rgba(0,0,0,1);opacity:0.8;width:100%;height:100%;position:fixed;left:0;top:0;z-index:10000;}
+.load5 {
+    margin: -45px auto 0;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top:50%;
+    text-align: center;
+    -webkit-animation: rotate 2.0s infinite linear;
+    animation: rotate 2.0s infinite linear;
+}
+.dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #67CF22;
+    border-radius: 300px;
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+.dot2 {
+    top: auto;
+    bottom: 0px;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+@-webkit-keyframes bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+      }
+}
