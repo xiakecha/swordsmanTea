@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+class IndexController extends WxController {
 	private function GetSignPackage(){
 		require_once "jssdk.php";
 		$jssdk = new \JSSDK("wxb6fb2f3d69e59dcd", "ba3ed9557e5b99777c4e59110abf69a4");

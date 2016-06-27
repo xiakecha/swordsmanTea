@@ -159,3 +159,36 @@ function create(){
     }
     $("#createPoster").submit();
 }
+
+function createOthers(){
+	var foot=$("#foot").val();
+    if(foot.length>18){
+        var d = dialog({
+            width:250,
+            height:50,
+            lock:true,
+            title: '提示',
+            content: '亲，尾行超过字数了，显示不佳，请核实哈。',
+            okValue: '确定',
+            ok: function () {
+            },
+        });
+        d.showModal();
+        return ;
+    }
+    if(foot.length<1){
+        var d = dialog({
+            width:250,
+            height:50,
+            lock:true,
+            title: '提示',
+            content: '亲，尾行字数太少了，显示不佳，请核实哈。',
+            okValue: '确定',
+            ok: function () {
+            },
+        });
+        d.showModal();
+        return ;
+    }
+    $("#createPoster").submit();
+}
