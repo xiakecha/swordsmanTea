@@ -21,8 +21,8 @@ function changeSrc(url){
 		 },    //参数值
         type: "post",   //请求方式
         success: function(data) {
-	     //var reUrl = "http://101.201.111.74/index.php/Home/Index/showPoster?image="+data.createImage;
-           var reUrl = "http://localhost/swordsmanTea/index.php/Home/Index/showPoster?image="+data.createImage;
+	     var reUrl = "http://101.201.111.74/index.php/Home/Index/showPoster?image="+data.createImage;
+           //var reUrl = "http://localhost/swordsmanTea/index.php/Home/Index/showPoster?image="+data.createImage;
            $('#reUrl').attr('value',reUrl);
 			 GoShow();
         },
