@@ -3,16 +3,15 @@
 /* CSS Document */
 body {
 	background-repeat: no-repeat;
-	background-size: 600px, 276px;
-	font-family: Microsoft YaHei;
+	background-size: 595px, 269px;
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
 }
 
 #page {
-	width: 276px;
-	height: 600px;
+	width: 269px;
+	height: 585px;
 }
 
 .grayscale {
@@ -21,19 +20,19 @@ body {
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
+	width: 269px;
 	height: 585px;
-	width: 276px;
 }
 
 .postFile {
 	width: 90px;
 	height: 160px;
 	background: no-repeat center;
-	background-image: url(../../image/index/logo.jpg);
+	background-image: url(../../image/index/logo.png);
 	background-size: 100% 100%;
-	cursor: pointer;
 	display: block;
-	font-size: 40px;
+	font-size: 12px;
+	letter-spacing:4px;
 	line-height: 0;
 	position: absolute;
 	margin-left: 160px;
@@ -41,6 +40,20 @@ body {
 	text-align: center;
 }
 
+/*.charater {
+	position: absolute;
+	width: 40px;
+	height: 340px;
+	background: no-repeat center;
+	display: block;
+	font-size: 18px;
+	margin-left: 225px;
+	margin-top: 40px;
+	text-align: center;
+	font-family: Microsoft YaHei;
+}
+
+*/
 .charater {
 	position: absolute;
 	width: 185px;
@@ -48,59 +61,49 @@ body {
 	background: no-repeat center;
 	cursor: pointer;
 	display: block;
-	font-size: 40px;
+	font-size: 24px;
 	line-height: 0;
-	margin-left: 165px;
+	margin-left: 153px;
 	margin-top: 40px;
 	text-align: center;
 }
 
+.shuli {
+	margin: 0 auto;
+	margin-top:20px;
+	width: 30px;
+	line-height: 30px;
+	font-family: Microsoft YaHei;
+}
+
+.contents{
+	height: 340px;
+	margin: 0 auto;
+	width: 25px;
+	word-wrap:break-word;
+	margin-top: 22px;
+	}
+
 .userphoto {
 	position: absolute;
 	margin-top: 40px;
+	margin-left: 20px;
 	border: 0px;
 	padding: 0px;
-	height: 350px;
-	width: 225px;
+	height: 340px;
+	width: 200px;
 }
 
-.shuli {
+.typeStyle {
 	margin: 0 auto;
 	width: 68px;
 	line-height: 38px;
-	margin-top: 22px;
-	font-family: myFirstFont;
+	margin-top: 122px;
+	margin-left:14px;
+	font-family: Microsoft YaHei;
 }
 
 @font-face {
 	font-family: myFirstFont;
 	src: url(../../ziti.ttf);
-}
-
-#contents {
-	margin-left: 5%;
-	position: relative;
-	margin-top: 60%;
-	font-size: 38px;
-	font-weight: bolder;
-	bottom: 25px;
-	color: RGB(291, 74, 18);
-}
-
-#contendBody {
-	font-size: 28px;
-	font-weight: lighter;
-}
-
-#contendFoot {
-	font-size: 27px;
-	font-weight: bolder;
-}
-
-#url {
-	width: 80px;
-	height: 80px;
-	position: absolute;
-	left: 210px;
-	bottom: 38px;
 }

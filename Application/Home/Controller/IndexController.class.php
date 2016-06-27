@@ -4,12 +4,12 @@ use Think\Controller;
 class IndexController extends Controller {
 	private function GetSignPackage(){
 		require_once "jssdk.php";
-		$jssdk = new \JSSDK("wx01881e098d8c9878", "d4d937a8a4ffa6370988384a2a9a77a2");
+		$jssdk = new \JSSDK("wxb6fb2f3d69e59dcd", "ba3ed9557e5b99777c4e59110abf69a4");
 		$signPackage = $jssdk->GetSignPackage();
 		return $signPackage;
 	}
 	public function index($flag=null){
-		$this->authorize("http://activity.evideostb.com/activity/Home/Beself/set_display",false);
+		$this->authorize("http://101.201.111.74/index.php/Home/Index/set_display",false);
 		//$this->display("Index/reduce");
 	}
 	public  function set_display(){
@@ -81,10 +81,9 @@ class IndexController extends Controller {
 	public function createPoster(){
 		$openid=session('openid');
 		$contents=array();
-		$contents[4]=I('foot');
 		$type=I('type');
 		$material=I('material');
-		session('pieces',$contents[4]);
+		$contents[4]=I('foot');
 		$contents[5]=session("title");
 		if (!$openid) {
 			$openid = I('openid');
@@ -110,6 +109,12 @@ class IndexController extends Controller {
 		$data['material']=$material;
 		$table->add($data);
 		$table->lock(false);//解锁表
+		if($type==1){
+			$type="水仙";
+		}
+		else{
+			$type="肉桂";
+		}
 		$this->assign("con",$contents);
 		$this->assign("type",$type);
 		$this->assign("material",$material);

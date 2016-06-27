@@ -8,16 +8,17 @@
 <link href="__STATIC__/css/poster/poster.css" rel="stylesheet" type="text/css">
 <script src="__STATIC__/js/jquery-1.11.3.min.js"></script>
 <script src="__STATIC__/js/mobieCut/html2canvas.js"></script>
-<script src="__STATIC__/js/poster/poster.js"></script>
 </head>
 <body  id="body" >
 <div id="page">
 <img class="grayscale"  id="back" alt="无法显示" src="__STATIC__/image/index/bg03.png">
+<input type="hidden" name="material" value="{$material}" id="material">
 <img class="userphoto"  id="back" alt="无法显示" src="__STATIC__/upload/{$con[5]}">
-<div class='charater'><div class='shuli'>测试</div></div>
-<div class='postFile'></div>
+<div class='charater'><div class='shuli'>{$con[4]}</div></div>
+<div class='postFile'><div class='typeStyle'>{$type}</div></div>
 </div>
 <input type="hidden" id="reUrl" value="">
 <input type="image" src="" id="createImg" name="createImg">
 </body>
+<script src="__STATIC__/js/poster/poster.js"></script>
 </html>

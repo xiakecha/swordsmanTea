@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="/swordsmanTea/Public/css/index/imgCut.css">
 <link rel="stylesheet" type="text/css" href="/swordsmanTea/Public/css/index/reduce.css">
 <link rel="stylesheet" type="text/css" href="/swordsmanTea/Public/css/index/Beself.css" >
-  <link href="/swordsmanTea/Public/css/ui-dialog.css" rel="stylesheet" type="text/css"/>
+<link href="/swordsmanTea/Public/css/ui-dialog.css" rel="stylesheet" type="text/css"/>
 <title>图片压缩上传</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
@@ -77,12 +77,12 @@ function Preview(imgSource) {
     $("#bgDiv").html('').append(html);      
 
     var ic = new ImgCropper("bgDiv", "dragDiv", imgSource, {
-      Width: 300, Height: 400, Color: "#000",
+      Width: 300, Height: 500, Color: "#000",
       Resize: true,
       Scale:true,
       Right: "rRight", Left: "rLeft", Up: "rUp", Down: "rDown",
       RightDown: "rRightDown", LeftDown: "rLeftDown", RightUp: "rRightUp", LeftUp: "rLeftUp",
-      Preview: "viewDiv", viewWidth: 300, viewHeight: 400
+      Preview: "viewDiv", viewWidth: 300, viewHeight: 500
     });
 }
 
@@ -93,21 +93,20 @@ function Preview(imgSource) {
   <div id="contents">
   <div class="box">2</div> 
   <span>请输入描述</span><br/>
-  <input type="text" id="foot" name="foot" class="input" value="" placeholder="3-7个汉字哦"/><br/>
+  <input type="text" id="foot" name="foot" class="input" value="" placeholder="1-18个汉字哦"/><br/>
+  <div>
   <br/>
     <div class="box">3</div> 
   <span>请选择类型：</span><br/>
-  <select name="type" class="input" >  
-  <option value ="1">Volvo</option>  
-  <option value ="2">Saab</option>  
-  <option value="3">Opel</option>  
-  <option value="4">Audi</option>  
+  <select name="type" class="input" id="type">  
+  <option value ="1">水仙</option>  
+  <option value ="2">肉桂</option>  
 </select> 
 <br/>
   <br/>
     <div class="box">4</div> 
   <span>请选择材质：</span><br/>
-  <select name="material" class="input" >  
+  <select name="material" class="input" id="material">  
   <option value ="1">普通</option>  
   <option value ="2">木纹</option>  
 </select> 

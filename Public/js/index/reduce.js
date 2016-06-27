@@ -113,8 +113,8 @@ function changeCut(url){
     });
 }
 function create(){
-    var foot=$("#foot").val();
-    if(foot.length>10){
+	var foot=$("#foot").val();
+    if(foot.length>18){
         var d = dialog({
             width:250,
             height:50,
