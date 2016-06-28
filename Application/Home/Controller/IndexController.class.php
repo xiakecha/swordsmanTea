@@ -182,12 +182,15 @@ class IndexController extends WxController {
 		return "ajaxReturn";
 	}
 	public function reduce(){
+		//phpinfo();
+		//dump("sss");
 		session("openid",1);
 		$this->display("Index/reduce");
 		return "reduce";
 	}
 
 	public function showSword(){
+		phpinfo();
 		$this->display("Index/showSword");
 		return "showSword";
 	}
