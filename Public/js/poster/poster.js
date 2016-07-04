@@ -1,6 +1,6 @@
 window.onload=function(){
 	var material = $("#material");
-	$("#back").attr("src","/swordsmanTea/Public/image/index/bg02.jpg");
+	$("#back").attr("src","/Public/image/index/bg02.jpg");
     html2canvas(document.getElementById('page')).then(function(canvas) {
     	var url=canvas.toDataURL();
     	$('#createImg').attr('src',url);
@@ -21,8 +21,8 @@ function changeSrc(url){
 		 },    //参数值
         type: "post",   //请求方式
         success: function(data) {
-	     //var reUrl = "http://101.201.111.74/index.php/Home/Index/showPoster?image="+data.createImage;
-           var reUrl = "http://localhost/swordsmanTea/index.php/Home/Index/showPoster?image="+data.createImage;
+	     var reUrl = "http://xgftea.hongweipeng.com/index.php/Home/Index/showPoster?image="+data.createImage;
+         //var reUrl = "http://localhost/swordsmanTea/index.php/Home/Index/showPoster?image="+data.createImage;
            $('#reUrl').attr('value',reUrl);
 			 GoShow();
         },
@@ -35,5 +35,5 @@ function changeSrc(url){
 function GoShow(){
     var redir=$("#reUrl").val();
     //alert(redir);
-    window.location.href=redir; 
+    //window.location.href=redir; 
 }
